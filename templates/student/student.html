@@ -1,0 +1,7 @@
+<form action="{% url 'student' %}" method="post">
+    {% csrf_token %}
+    Name:<input type="text" name="name"><br><br>
+    Roll_no:<input type="number" name="roll"><br><br>
+    Address:<input type="text" name="address"><br><br>
+    <input type="submit" value="submit">
+</form>

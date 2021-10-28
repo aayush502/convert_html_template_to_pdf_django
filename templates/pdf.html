@@ -1,0 +1,6 @@
+{% load static %}
+<h1>Hello World</h1>
+Name: {{ data.name }}<br><br>
+Roll_no: {{ data.roll_no }}<br><br>
+Address: {{ data.address }}<br><br>
+<a href="{% static 'media/' %}{{data.name}}_{{data.id}}.pdf" download>Download PDF</a>
